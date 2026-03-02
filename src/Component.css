@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" );
+
+.header{
+       position: fixed;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        background: lightblue;
+        padding: 1rem;
+        height: 1.8rem;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+}
+
+.header a {
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        text-decoration: none;
+        width: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 50px;
+        margin-top: -7px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        /* Apply transitions to the properties you will change */
+        transition: all 0.2s ease; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header a:hover {
+        font-size: 22px;
+        text-align: center;
+        width: 60px;
+        height: 1.4rem;
+        background-color: #feb400; /* Change color on hover */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header a:active {
+  /* Scale the button down slightly when clicked */
+  transform: scale(0.95); 
+  /* Move it down to simulate being pressed in */
+  transform: translateY(2px); 
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Less shadow when pressed */
+}
+
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1;
+  text-space: 1px;
+  text-shadow: 10px 5px 10px #1ef1ed;
+  margin: 65px 0 0 65px;
+  font-weight:bold;
+  color:  #feb400;
+}
+
+h1:hover {
+  color: #fff461;
+    text-shadow: 15px 10px 10px #1ef1ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 3px 0 0 65px;
+  cursor: pointer;
+  font-style: italic;
+  text-shadow: 10px 5px 10px #f700dd;
+  padding-top: 1rem;
+  color: #36ff33 ;
+}
+
+h2:hover {
+  color: #7bff00;
+    text-shadow: 15px 10px 10px #f700dd;
+  text-decoration: none;
+}
+
+section img.background {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100vmax;
+  z-index: -1;
+}
+
+.home-detail{
+     position: "absolute";
+      top: 5rem;
+       left: 2rem;
+        width: 17rem;
+}
+
+.home-arr{
+    bottom: 3rem;
+     left: 50%;
+      position: absolute;
+       transform: translate(-50%, 0);
+}
+
+.home-arr img{
+    height: 3rem;
+     width: 3rem; 
+    cursor: pointer;
+}
+
+.home-arr img:hover {
+    opacity: 0.8; /* Makes the icon slightly transparent on hover */
+    transform: scale(1.1); /* Slightly increases the size on hover */
+    background-color: #53fb50;
+    border-radius: 50%;
+        box-shadow: 5px 10px 30px #f700dd;
+}
+
+#about div{
+        background-color: #fff;
+        width: 60%;
+        padding: 4rem;
+        margin: 3rem auto;
+        text-align: center;
+}
+
+#about div:hover {
+    background-color: lightyellow;
+    box-shadow: 10px 10px 20px 20px #98FF98;
+}
+
+#about ul{
+    text-align: left;
+    columns: 2;
+    font-size: 1.25rem;
+    margin: 2rem 3rem;
+    gap: 3rem;
+}
+
+#about p{
+    padding: 1rem 3rem 0;
+}
+
+
+.card-container1 {
+  width: 670px;
+  height: 200px;
+  /* Adds a 3D perspective to the container */
+  perspective: 1000px; 
+}
+
+.card1 {
+  width: 100%;
+  height: 200%;
+  position: relative;
+  /* Smoothly transitions the transform property */
+  transition: transform 0.6s; 
+  /* Ensures the 3D transformations are applied correctly */
+  transform-style: preserve-3d; 
+}
+
+.front1, .back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: -18% 0 0 -20px;
+  /* Hide the back of the element when it is rotated */
+  backface-visibility: hidden; 
+    box-shadow: 10px 10px 10px 2px #02b7ff;
+
+  border-radius: 8px;
+  /* Add other styling like background, padding, etc. */
+}
+
+.front1 {
+  color: black;
+  /* Ensure the image fills the front face */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front1 img, .back1 img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.back1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Initially rotate the back side 180 degrees so it is hidden */
+  transform: rotateY(180deg); 
+}
+
+.card-container1:hover .card1 {
+  transform: rotateY(180deg);
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    /* HEADER STYLES - MEDIA QUERY */
+
+     .header a {
+        color: #ffffff;
+        font-size: 11px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        width: 45px;
+        padding: 6px 6px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        /* Apply transitions to the properties you will change */
+        transition: all 0.2s ease; 
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+    .header{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        background-color: lightblue;
+        padding: 1rem;
+        height: 0.4rem;
+        width: 92%;
+        z-index: 10;
+    }
+
+        .header a:hover {
+            font-size: 16px;
+            text-align: center;
+            width: 60px;
+            display: flex;
+            margin-top: 8px;
+            justify-content: center;
+            padding: 7px 12px;
+            height: 1.4rem;
+            background-color: #feb400; /* Change color on hover */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+.header a:active {
+  /* Scale the button down slightly when clicked */
+  transform: scale(0.95); 
+  /* Move it down to simulate being pressed in */
+  transform: translateY(2px); 
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Less shadow when pressed */
+}
+
+
+    h1{
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 3px;
+        text-shadow: 10px 5px 10px #1ef1ed;
+        font-weight:bold;
+        color:  #feb400;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-style: italic;
+        text-shadow: 10px 5px 10px #f700dd;
+        padding-top: 1rem;
+        color: #3de43d ;
+        margin: 4px 0 0 5px;
+     }
+
+     section img.background {
+        height: 75%;
+        left: 50%;
+        object-fit: cover;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transform: translate(-55%, 0);
+        width: 100vmax;
+        z-index: -1;
+    }
+
+   .home-arr{
+    bottom: 20rem;
+     left: 50%;
+      position: absolute;
+       transform: translate(-50%, 0);
+    }
+
+    .home-arr img{
+        height: 2rem;
+        width: 2rem; 
+        cursor: pointer;
+    }
+
+    /* ABOUT SECTION STYLES - MEDIA QUERY */
+
+    #about{
+          width: 80%; 
+          height: 92vh;
+          padding: 4rem;
+          margin: -16rem -100rem 0 0;
+          text-align: center;
+    }
+
+    #about img{
+        height: 100%;
+        left: 50%;
+        object-fit: cover;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, 0);
+        width: 60vmax;
+        z-index: -1;
+    }
+
+    #about div{
+        width: 37%;
+        height: 68vh;
+        padding: 7rem;
+        margin: 10px 0 0 -35px;
+        text-align: center;
+    }
+
+    #about div:hover {
+    background-color: lightyellow;
+    box-shadow: 1px 1px 10px 15px #98FF98;
+     }
+
+        #about p{
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 30px 0 0 -130px;
+            font-weight: 300;
+            width: 283px;
+
+         }
+
+        p.large {
+            font-size: 24px;
+        }
+
+
+        #about h2{
+            font-size: 22px;
+            width: 130%;
+            text-align: center;
+            margin: -80px 0px 0 -12px;
+            padding-top: 28px;
+        }
+
+        
+        #about hr {
+        margin: 1.5rem;
+        border: 1.3px solid gray;
+        }
+
+        #about ul{
+            text-align: left;
+            columns: 2;
+            font-size: 0.8rem;
+            margin: 1rem -7rem;
+            gap: 0.1rem;
+        }
+
+        #about li {
+        line-height: 1.7;
+        }
+
+        #about li::marker {
+        color: #4e567e;
+        }
+
+    /* PORTFOLIO SECTION STYLES - MEDIA QUERY */
+
+        #portfolio h2{
+            margin-top: -10px;
+        }
+
+        #portfolio > div{
+             display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            margin-top: 10px;    
+        }       
+
+
+        
+        .card-container1 {
+            width: 250px;
+            height: 350px;
+            perspective: 100px;
+        }
+        
+
+        .card1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+                }
+
+        .front1,
+        .back1 {
+        position: absolute;
+        width: 145%;
+        height: 60%;
+        backface-visibility: hidden;
+        border-radius: 8px;
+        overflow: hidden;
+        }
+
+        .front1{
+            margin: 10px 0 0 -148px;
+        }
+
+        .back1{
+            margin: 10px 0 0 35px;
+        }
+
+        .front1 img,
+        .back1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .back1 {
+        transform: rotateY(180deg);
+        }
+
+        .card-container1:hover .card1 {
+        transform: rotateY(180deg);
+        }
+
+    /* CONTAINER BOXES STYLES - MEDIA QUERY */
+
+        #portfolio .container{
+            display: grid;
+            grid-gap: 20px;
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
+            grid-template-columns: 350px;
+            margin: -20px 0 0 -135px;
+        }
+
+        .container .box {
+        border-radius: 10px;
+        width: 90%;
+        height: 20vh;
+        background-color:lightblue;
+        border: 1px solid rgb(204, 204, 204);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 24px 16px;
+        text-align: center;
+        }
+
+            
+    /* Add a hover effect */
+    img.socialIcon:hover {
+        opacity: 0.8; /* Makes the icon slightly transparent on hover */
+        transform: scale(1.1); /* Slightly increases the size on hover */
+    }
+
+    /* Set specific hover colors for each brand */
+    img.socialIcon#email:hover {
+        background-color: #D44638;
+        border-radius: 5px;
+    }
+
+    img.socialIcon#linkedIn:hover{
+        background-color: #0A66C2;
+    }
+
+    img.socialIcon#x-twitter:hover {
+        background-color: #21282d;
+        border-radius: 3px;
+    }
+
+    img.socialIcon#gitHub:hover {
+        background-color: #333;
+        border-radius: 50%;
+    }
+
+    img.socialIcon#instagram:hover {
+        /* Instagram has a gradient, so we can use that */
+        background-image: linear-gradient(to right, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+        border-radius: 8px;
+    }
+
+
+}
+

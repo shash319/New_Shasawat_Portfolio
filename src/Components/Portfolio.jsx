@@ -9,6 +9,7 @@
  */
 
 import React from "react";
+import "../Component.css";
 
 /**
  * Desk image
@@ -56,14 +57,53 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
+      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem", marginLeft: "10rem", gap: "3rem" }}>
+        {/* <div style={{ maxWidth: "40%", alignSelf: "center" }} className="portfolio-img">
+          
+          <div class="card-container1">
+            <div class="card1">
+              <div class="front1">
+                <img
+                  src={image}
+                  style={{ height: "60vh", width: "100%", objectFit: "cover", borderRadius: "0.5rem", boxShadow: "20px 20px 10px lightblue" }}
+                  alt={imageAltText}
+                />
+              </div>
+              </div>
+              <div class="back1">
+                <img
+                  src={image}
+                  style={{ height: "60vh", width: "100%", objectFit: "cover", borderRadius: "0.5rem", boxShadow: "20px 20px 10px lightblue" }}
+                  alt={imageAltText}
+                />
+              </div>
+            </div>
+          </div> */}
+
+          <div style={{ maxWidth: "40%", alignSelf: "center" }} className="portfolio-img">
+
+              <div className="card-container1">
+                <div className="card1">
+
+                  <div className="front1">
+                    <img
+                      src={image}
+                      alt={imageAltText}
+                    />
+                  </div>
+
+                  <div className="back1">
+                    <img
+                      src={image}
+                      alt={imageAltText}
+                    />
+                  </div>
+
+                </div>
+              </div>
+
+          </div>
+          
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>

@@ -6,8 +6,10 @@
  */
 
 import React from "react";
+
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
+import "../Component.css";
 
 /**
  * Home background image
@@ -25,15 +27,21 @@ import image from "../images/professionals.jpg";
 const imageAltText = "Adult coders in office setting learning web technologies in his pc";
 
 const Home = ({ name, title }) => {
+
+   const handleScrollDown = () => {
+  document.getElementById("about")
+    ?.scrollIntoView({ behavior: "smooth" });
+};
+
   return (
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <h1>{name}</h1>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:a256a0ee-1036-42d2-8d1f-773adc193a42"><h1>{name}</h1></a>
         <h2>{title}</h2>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+      <div className="home-arr">
+        <img onClick={handleScrollDown} src={arrowSvg} alt={imageAltText} />
       </div>
     </section>
   );
@@ -41,7 +49,7 @@ const Home = ({ name, title }) => {
 
 Home.defaultProps = {
   name: "Shasawat Pal",
-  title: "Web Developer",
+  title: "Web developer",
 };
 
 Home.propTypes = {
