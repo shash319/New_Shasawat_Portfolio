@@ -104,25 +104,79 @@ section img.background {
         width: 17rem;
 }
 
-.home-arr{
-    bottom: 3rem;
-     left: 50%;
-      position: absolute;
-       transform: translate(-50%, 0);
+ .home-arr {
+        position: absolute;
+        bottom: 5rem;
+        margin: auto;
+        /* bottom: 40px; */
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    /* Arrow stays stable */
+    .home-arr img {
+    width: 60px;
+    height: 65px;
+    cursor: pointer;
+    background-color: #aefc07;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    }
+
+/* Rotating glow ring */
+    .home-arr::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(
+            from 0deg,
+            rgba(0,255,255,0.8),
+            rgba(255,0,255,0.8),
+            rgba(0,255,255,0.8)
+        );
+        animation: rotateGlow 3s linear infinite;
+        filter: blur(8px);
+        z-index: 1;
+        }
+
+/* Cut center to make ring */
+.home-arr::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.4); /* optional subtle glass center */
+        z-index: 0;
+        }
+
+/* Rotation animation */
+@keyframes rotateGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.home-arr img{
-    height: 3rem;
-     width: 3rem; 
-    cursor: pointer;
-}
 
 .home-arr img:hover {
     opacity: 0.8; /* Makes the icon slightly transparent on hover */
-    transform: scale(1.1); /* Slightly increases the size on hover */
+    transform: scale(1.12); /* Slightly increases the size on hover */
     background-color: #53fb50;
     border-radius: 50%;
-        box-shadow: 5px 10px 30px #f700dd;
+    box-shadow: 5px 10px 30px #f700dd;
 }
 
 #about div{
@@ -210,7 +264,7 @@ section img.background {
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (((min-width: 320px) and (max-width: 440px)) and ((min-height: 800px) and (max-height: 960px))) {
 
     /* HEADER STYLES - MEDIA QUERY */
 
@@ -288,7 +342,7 @@ section img.background {
      }
 
      section img.background {
-        height: 75%;
+        height: 100%;
         left: 50%;
         object-fit: cover;
         pointer-events: none;
@@ -299,18 +353,82 @@ section img.background {
         z-index: -1;
     }
 
-   .home-arr{
-    bottom: 20rem;
-     left: 50%;
-      position: absolute;
-       transform: translate(-50%, 0);
+
+    .home-arr {
+        position: absolute;
+        bottom: 10rem;
+        margin: auto;
+        /* bottom: 40px; */
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    /* Arrow stays stable */
+    .home-arr img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #aefc07;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
     }
 
-    .home-arr img{
-        height: 2rem;
-        width: 2rem; 
-        cursor: pointer;
-    }
+/* Rotating glow ring */
+    .home-arr::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(
+            from 0deg,
+            rgba(0,255,255,0.8),
+            rgba(255,0,255,0.8),
+            rgba(0,255,255,0.8)
+        );
+        animation: rotateGlow 3s linear infinite;
+        filter: blur(8px);
+        z-index: 1;
+        }
+
+/* Cut center to make ring */
+.home-arr::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.4); /* optional subtle glass center */
+        z-index: 0;
+        }
+
+/* Rotation animation */
+@keyframes rotateGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.home-arr img:hover {
+    opacity: 0.8; /* Makes the icon slightly transparent on hover */
+    transform: scale(1.12); /* Slightly increases the size on hover */
+    background-color: #53fb50;
+    border-radius: 50%;
+    box-shadow: 5px 10px 30px #f700dd;
+}
 
     /* ABOUT SECTION STYLES - MEDIA QUERY */
 
@@ -318,7 +436,7 @@ section img.background {
           width: 80%; 
           height: 92vh;
           padding: 4rem;
-          margin: -16rem -100rem 0 0;
+          margin-left: -2.5rem;
           text-align: center;
     }
 
@@ -335,10 +453,10 @@ section img.background {
     }
 
     #about div{
-        width: 37%;
-        height: 68vh;
+        width: 30%;
+        height: 64vh;
         padding: 7rem;
-        margin: 10px 0 0 -35px;
+        margin-top: 10px;
         text-align: center;
     }
 
@@ -348,9 +466,9 @@ section img.background {
      }
 
         #about p{
-            font-size: 15px;
+            font-size: 14px;
             line-height: 1.5;
-            margin: 30px 0 0 -130px;
+            margin: 22px 0 0 -145px;
             font-weight: 300;
             width: 283px;
 
@@ -365,7 +483,7 @@ section img.background {
             font-size: 22px;
             width: 130%;
             text-align: center;
-            margin: -80px 0px 0 -12px;
+            margin: -105px 0px 0 -12px;
             padding-top: 28px;
         }
 
@@ -379,7 +497,7 @@ section img.background {
             text-align: left;
             columns: 2;
             font-size: 0.8rem;
-            margin: 1rem -7rem;
+            margin: 1rem -7rem 0 -7.7rem;
             gap: 0.1rem;
         }
 
@@ -407,7 +525,7 @@ section img.background {
 
         
         .card-container1 {
-            width: 250px;
+            width: 225px;
             height: 350px;
             perspective: 100px;
         }
@@ -432,11 +550,11 @@ section img.background {
         }
 
         .front1{
-            margin: 10px 0 0 -148px;
+            margin: 10px 0 0 -150px;
         }
 
         .back1{
-            margin: 10px 0 0 35px;
+            margin: 10px 0 0 48px;
         }
 
         .front1 img,
@@ -460,14 +578,13 @@ section img.background {
             display: grid;
             grid-gap: 20px;
             /* grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
-            grid-template-columns: 350px;
-            margin: -20px 0 0 -135px;
+            grid-template-columns: 310px;
+            margin: -70px 0 0 -140px;
         }
 
         .container .box {
         border-radius: 10px;
         width: 90%;
-        height: 20vh;
         background-color:lightblue;
         border: 1px solid rgb(204, 204, 204);
         display: flex;
