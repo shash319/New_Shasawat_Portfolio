@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/New_Shasawat_Portfolio/static/css/main.8b87462b.css",
-    "main.js": "/New_Shasawat_Portfolio/static/js/main.f54dcd51.js",
-    "static/media/professionals.jpg": "/New_Shasawat_Portfolio/static/media/professionals.b273bde22aff9ad733fc.jpg",
-    "static/media/background_intro2.jpg": "/New_Shasawat_Portfolio/static/media/background_intro2.1569ad9c2ab251b30d4e.jpg",
-    "static/media/design_desk2.webp": "/New_Shasawat_Portfolio/static/media/design_desk2.63be725d325c15213536.webp",
-    "static/media/instagram.svg": "/New_Shasawat_Portfolio/static/media/instagram.318e6df2752736d3c45c33aed816ef9f.svg",
-    "static/media/github.svg": "/New_Shasawat_Portfolio/static/media/github.4bc72f28e79178cdc9c76db0b22c501e.svg",
-    "static/media/devdotto.svg": "/New_Shasawat_Portfolio/static/media/devdotto.0ff9f0d7b8ce0b5aa62e2f733495d83b.svg",
-    "index.html": "/New_Shasawat_Portfolio/index.html",
-    "static/media/linkedin.svg": "/New_Shasawat_Portfolio/static/media/linkedin.36bd4fb37078da2bbffc9b70a0acc872.svg",
-    "static/media/youtube.svg": "/New_Shasawat_Portfolio/static/media/youtube.f5a3fbc126791c9789e222f96fca742f.svg",
-    "static/media/x-twitter.svg": "/New_Shasawat_Portfolio/static/media/x-twitter.cc0927036c7f880ef4c5e9a955237b49.svg",
-    "static/media/medium.svg": "/New_Shasawat_Portfolio/static/media/medium.a73cd7178cc078152fd9eb34bd74f5ac.svg",
-    "static/media/down-arrow.svg": "/New_Shasawat_Portfolio/static/media/down-arrow.91079b27aa77759d539380d0c831ab87.svg",
-    "static/media/envelope.svg": "/New_Shasawat_Portfolio/static/media/envelope.33857507a5ba83c373a8c7d5f0d0c948.svg",
-    "main.8b87462b.css.map": "/New_Shasawat_Portfolio/static/css/main.8b87462b.css.map",
-    "main.f54dcd51.js.map": "/New_Shasawat_Portfolio/static/js/main.f54dcd51.js.map"
+    "main.css": "./static/css/main.8b87462b.css",
+    "main.js": "./static/js/main.0f1ff82a.js",
+    "static/media/professionals.jpg": "./static/media/professionals.b273bde22aff9ad733fc.jpg",
+    "static/media/background_intro2.jpg": "./static/media/background_intro2.1569ad9c2ab251b30d4e.jpg",
+    "static/media/design_desk2.webp": "./static/media/design_desk2.63be725d325c15213536.webp",
+    "static/media/instagram.svg": "./static/media/instagram.318e6df2752736d3c45c33aed816ef9f.svg",
+    "static/media/github.svg": "./static/media/github.4bc72f28e79178cdc9c76db0b22c501e.svg",
+    "static/media/devdotto.svg": "./static/media/devdotto.0ff9f0d7b8ce0b5aa62e2f733495d83b.svg",
+    "index.html": "./index.html",
+    "static/media/linkedin.svg": "./static/media/linkedin.36bd4fb37078da2bbffc9b70a0acc872.svg",
+    "static/media/youtube.svg": "./static/media/youtube.f5a3fbc126791c9789e222f96fca742f.svg",
+    "static/media/x-twitter.svg": "./static/media/x-twitter.cc0927036c7f880ef4c5e9a955237b49.svg",
+    "static/media/medium.svg": "./static/media/medium.a73cd7178cc078152fd9eb34bd74f5ac.svg",
+    "static/media/down-arrow.svg": "./static/media/down-arrow.91079b27aa77759d539380d0c831ab87.svg",
+    "static/media/envelope.svg": "./static/media/envelope.33857507a5ba83c373a8c7d5f0d0c948.svg",
+    "main.8b87462b.css.map": "./static/css/main.8b87462b.css.map",
+    "main.0f1ff82a.js.map": "./static/js/main.0f1ff82a.js.map"
   },
   "entrypoints": [
     "static/css/main.8b87462b.css",
-    "static/js/main.f54dcd51.js"
+    "static/js/main.0f1ff82a.js"
   ]
 }
