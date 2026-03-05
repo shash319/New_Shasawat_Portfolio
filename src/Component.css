@@ -434,7 +434,7 @@ section img.background {
 
     #about{
           width: 80%; 
-          height: 92vh;
+          height: 100vh;
           padding: 4rem;
           margin-left: -2.5rem;
           text-align: center;
@@ -454,7 +454,7 @@ section img.background {
 
     #about div{
         width: 30%;
-        height: 64vh;
+        height: 70vh;
         padding: 7rem;
         margin-top: 10px;
         text-align: center;
