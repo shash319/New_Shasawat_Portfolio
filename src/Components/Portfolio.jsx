@@ -57,7 +57,7 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem", marginLeft: "10rem", gap: "3rem" }}>
+      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem", marginLeft: "8rem", gap: "6rem" }}>
         {/* <div style={{ maxWidth: "40%", alignSelf: "center" }} className="portfolio-img">
           
           <div class="card-container1">
