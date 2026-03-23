@@ -37,7 +37,7 @@ const Home = ({ name, title }) => {
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:a256a0ee-1036-42d2-8d1f-773adc193a42"><h1>{name}</h1></a>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:4ce45e80-a192-4652-81f8-ba268a0bee37"><h1>{name}</h1></a>
         <h2>{title}</h2>
       </div>
       <div className="home-arr">
